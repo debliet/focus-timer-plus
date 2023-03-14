@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #f1efef;
+}
+
+main {
+    display: flex;
+    gap: 19rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#timer-time span {
+    font-size: 12rem;
+    font-family: "Roboto";
+    color: #323238;
+}
+
+button {
+    border: none;
+}
+
+button svg path {
+    fill: #323238;
+}
+
+.hide {
+    display: none;
+}
+
+#timer-controls {
+    display: flex;
+    gap: 4rem;
+}
+
+#sounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    width: 30.8rem;
+    height: 33.6rem;
+}
+
+.forest,
+.rain,
+.cafe,
+.fireplace {
+    width: 13.7rem;
+    height: 15rem;
+    border-radius: 2.4rem;
+    background: #E1E1E6;
+}
