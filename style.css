@@ -37,7 +37,7 @@ main {
 }
 
 #timer-time span {
-    font-size: 12rem;
+    font-size: clamp(8rem, 3rem + 10vw, 12rem);
     font-family: "Roboto";
     color: var(--font-color);
 }
@@ -52,7 +52,7 @@ button {
 
 #timer-controls {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 #sounds {
@@ -81,4 +81,58 @@ button {
     height: 15rem;
     border-radius: 2.4rem;
     background: var(--btn-bg-selected);
+}
+
+@media(max-width: 950px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    #timer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    #timer-time span {
+        font-size: clamp(5rem, 3rem + 10vw, 8rem);
+        font-family: "Roboto";
+        color: var(--font-color);
+    }
+
+    #timer-controls {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #sounds {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 20.8rem;
+        height: 23.6rem;
+    }
+
+    .forest,
+    .cafe,
+    .rain,
+    .fireplace {
+        width: 9.3rem;
+        height: 10.7rem;
+        border-radius: 2.4rem;
+        background: var(--btn-bg);
+    }
+
+    .forest-selected,
+    .rain-selected,
+    .cafe-selected,
+    .fireplace-selected {
+        width: 9.3rem;
+        height: 10.7rem;
+        border-radius: 2rem;
+        background: var(--btn-bg-selected);
+    }
 }
