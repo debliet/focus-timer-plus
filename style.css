@@ -86,6 +86,49 @@ button {
 @media(max-width: 950px) {
     main {
         display: flex;
+        gap: 11rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #sounds {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 20.8rem;
+        height: 23.6rem;
+    }
+
+    .forest,
+    .cafe,
+    .rain,
+    .fireplace {
+        width: 10.5rem;
+        height: 12rem;
+        border-radius: 2.4rem;
+        background: var(--btn-bg);
+    }
+
+    .forest-selected,
+    .rain-selected,
+    .cafe-selected,
+    .fireplace-selected {
+        width: 10.5rem;
+        height: 12rem;
+        border-radius: 2rem;
+        background: var(--btn-bg-selected);
+    }
+}
+
+@media(max-width: 600px) {
+    main {
+        display: flex;
         flex-direction: column;
         gap: 5rem;
     }
@@ -106,6 +149,11 @@ button {
     #timer-controls {
         display: flex;
         gap: 2rem;
+    }
+
+    button svg {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     #sounds {
