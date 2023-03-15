@@ -6,13 +6,19 @@
 
 :root {
     font-size: 62.5%;
+    --font-color: #323238;
+    --bg-color: #f1efef;
+    --controls-fill: #323238;
+    --btn-bg: #E1E1E6;
+    --btn-bg-selected: #02799D;
+    --btn-icon-fill-selected: #f1efef;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: #f1efef;
+    background: var(--bg-color);
 }
 
 main {
@@ -33,15 +39,11 @@ main {
 #timer-time span {
     font-size: 12rem;
     font-family: "Roboto";
-    color: #323238;
+    color: var(--font-color);
 }
 
 button {
     border: none;
-}
-
-button svg path {
-    fill: #323238;
 }
 
 .hide {
@@ -68,5 +70,15 @@ button svg path {
     width: 13.7rem;
     height: 15rem;
     border-radius: 2.4rem;
-    background: #E1E1E6;
+    background: var(--btn-bg);
+}
+
+.forest-selected,
+.rain-selected,
+.cafe-selected,
+.fireplace-selected {
+    width: 13.7rem;
+    height: 15rem;
+    border-radius: 2.4rem;
+    background: var(--btn-bg-selected);
 }
